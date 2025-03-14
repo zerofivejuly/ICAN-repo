@@ -4,7 +4,7 @@ const thisYear = new Date().getFullYear();
 year.setAttribute('datetime', thisYear);
 year.textContent = thisYear;
 
-//==============================TOGGLE BTW MAIN-SIGNIN AND MAIN-SIGN-UP=======================================
+//==============================TOGGLE BTW MAIN-SIGNIN AND MAIN-SIGN-UP==================
 const acct1 = document.querySelector('#acct1');
 const acct2 = document.querySelector('#acct2');
 const mainSignIn = document.querySelector('.main-signin');
