@@ -1,115 +1,277 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="20s">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="index.css">
-    <title>Members Portal</title>
-</head>
-<body>
-    <header class="header">
-        <a href="#"><img src="ICAN_Logo.jpg" alt="ICAN Logo"></a>
-        <nav class="nav">
-            <ul class="navbar">
-                <li><a class="job" href="#">Job Center</a></li>
-                <li><a class="contact" href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<!DOCTYPE html> 
 
-    <main class="main" id="main">
-        <h1>Members Portal</h1>
-        <div class="overlay"></div>
-        <main class="main-signin">
-            <form class="signin" id="signin">
-                <div class="sign" id="sign">
-                        <hr class="left"><h2>Sign In</h2><hr class="right">
-                </div>
-                <div class="input" id="input">
-                        <input type="text" placeholder="Membership Number: Numeric Only">
-                        <input type="password" placeholder="Password">
+<html lang="en"> 
 
-                        <button class="button">Sign In</button>
-                </div>
+<head> 
 
-                <div class="reg_pass" id="reg_pass">
-                        <p><a class="create" id="acct1" href="#">Create an account</a></p>
-                        <p><a class="forgot" href="index1.html">Forgot Password?</a></p>
-                </div>
-            </form>
-        </main>
+    <meta charset="UTF-8"> 
 
-        <main class="main-signup">
-            <div class="sign" id="sign">
-                <hr class="left"><h2>Sign Up</h2><hr class="right">
-            </div>
-                
-            <section class="section" id="section">
-                <form class="signup" id="signup">
-                    <div class="input" id="input">
-                        <input type="text" placeholder="Membership Number: Numbers only e.g 2145">
-                        <input type="text" title="Enter your first/given name" placeholder="Surname/Family Name" required aria-required="true">
-                        <input type="email" name="email" id="email" placeholder="Email Address" required aria-required="true">
-                        <input type="email" name="email" id="email" placeholder="Re-enter Email Address" required aria-required="true">
-                        <input type="tel" name="tel" id="tel" placeholder="Mobile Phone Number" required aria-required="true">
-                        <input type="tel" name="tel" id="tel" placeholder="Re-enter Mobile Phone Number" required aria-required="true">
-                        <input type="password" name="password" id="password" placeholder="Password">
-                        <input type="password" name="password" id="password" placeholder="Confirm Password">
+    <meta http-equiv="refresh" content="20s"> 
 
-                        <button class="button">Submit</button>
-                    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-                    <div class="reg_pass" id="reg_pass">
-                        <p><a class="create" id="acct2" href="#">I have an account</a></p>
-                    </div>
-                </form>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 
-                <form class="upload">
-                    <div class="identify" id="identify">
-                        <p class="info" id="info">
-                           Select identification type</span>
-                        </p>
-                        <select name="id" id="id">
-                            <option>Select</option>
-                            <option value="NIN">National ID Card</option>
-                            <option value="licence">Driver's Licence</option>
-                            <option value="Card">Voter's Card</option>
-                        </select>
-                    </div>
-                        
-                    <div class="image" id="image">
-                        <p class="info" id="info">
-                            Upload acceptable means of identification scanned in <span class="jpeg-format">jpeg format</span> with <span class="max-size">maximum size of 20kb</span>
-                        </p>
-                        <label for="fileInput" class="imageUp" id="imageUp">Upload File</label>
-                        <input type="file" id="fileInput" name="filename" accept="image/*" aria-describedby="info" aria-label="Upload identification file">
-                    </div>
-                        
-                    <div class="preview" id="preview">
-                        <img src="" alt="Image Preview" class="imagepre" id="imagepre">
-                        <p class="file-info" id="file-info"></p>
-                    </div>
+    <link rel="stylesheet" href="ICAN.css"> 
 
-                </form>
-            </section>
-        </main>
-    </main>
+    <title>Login Page</title> 
 
-    <footer class="footer" id="footer">
-        <p>
-            <span>Copyright &#169; <!-- &copy; --> <time id="year"></time></span>
-            <span>ICAN</span>
-            All rights reserved.
-        </p>
-        <a href="#"><i class='bx bxl-facebook facebook'></i></a>
-        <a href="#"><i class='bx bxl-linkedin linkedin'></i></a>
-        <a href="#"><i class='bx bxl-twitter twitter'></i></a>
-        <a href="#"><i class='bx bxl-youtube youtube'></i></a>
-        <a href="#"><i class='bx bxl-instagram instagram'></i></a>
-    </footer>
+</head> 
 
-    <script src="index.js"></script>
-</body>
+<body> 
+
+    <header class="header"> 
+
+        <a href="#"><img src="ICAN_Logo.jpg" alt="ICAN Logo"></a> 
+
+        <nav class="nav"> 
+
+            <ul class="navbar"> 
+
+                <li><a class="job" href="#">Job Center</a></li> 
+
+                <li><a class="contact" href="#">Contact Us</a></li> 
+
+            </ul> 
+
+        </nav> 
+
+    </header> 
+
+ 
+
+    <main class="main" id="main"> 
+
+        <h1 class="member-portal">Members Portal</h1> 
+
+        <div class="overlay"></div> 
+
+        <main class="main-signin"> 
+
+            <form class="signin" id="signin"> 
+
+                <div class="sign" id="sign"> 
+
+                        <hr class="left"><h2>Sign In</h2><hr class="right"> 
+
+                </div> 
+
+                <div class="input" id="input"> 
+
+                        <input type="text" placeholder="Membership Number: Numeric Only"> 
+
+                        <input type="password" placeholder="Password"> 
+
+ 
+
+                        <button class="button">Sign In</button> 
+
+                </div> 
+
+ 
+
+                <div class="reg_pass" id="reg_pass"> 
+
+                        <p><a class="create" id="acct1" href="#">Create an account</a></p> 
+
+                        <p><a class="forgot" href="#">Forgot Password?</a></p> 
+
+                </div> 
+
+            </form> 
+
+        </main> 
+
+ 
+
+        <main class="main-signup"> 
+
+            <div class="sign" id="sign"> 
+
+                <hr class="left"><h2>Sign Up</h2><hr class="right"> 
+
+            </div> 
+
+                 
+
+            <section class="section" id="section"> 
+
+                <form class="signup" id="signup"> 
+
+                    <div class="input" id="input"> 
+
+
+                        <input type="text" placeholder="Membership Number: Numbers only e.g 2145"> 
+
+                             
+
+                        <input type="text" title="Enter your first/given name" placeholder="Surname/Family Name" required aria-required="true"> 
+
+
+                        <input type="email" name="email" id="email" placeholder="Email Address" required aria-required="true"> 
+
+                             
+
+                        <input type="email" name="email" id="email" placeholder="Re-enter Email Address" required aria-required="true"> 
+
+ 
+
+                        <input type="tel" name="tel" id="tel" placeholder="Mobile Phone Number" required aria-required="true"> 
+
+                             
+
+                        <input type="tel" name="tel" id="tel" placeholder="Re-enter Mobile Phone Number" required aria-required="true"> 
+
+ 
+
+                        <input type="password" name="password" id="password" placeholder="Password"> 
+
+ 
+
+                        <input type="password" name="password" id="password" placeholder="Confirm Password"> 
+
+                        <button class="button">Submit</button> 
+
+                    </div> 
+
+ 
+
+                    <div class="reg_pass" id="reg_pass"> 
+
+                        <p><a class="create" id="acct2" href="#">I have an account</a></p> 
+
+                    </div> 
+
+                </form> 
+
+ 
+
+                <form class="upload"> 
+
+                    <div class="identify" id="identify"> 
+
+                        <p class="info" id="info"> 
+
+                                Select identification type</span> 
+
+                        </p> 
+
+                        <select name="id" id="id"> 
+
+                            <option>Select</option> 
+
+                            <option value="NIN">National ID Card</option> 
+
+                            <option value="licence">Driver's Licence</option> 
+
+                            <option value="Card">Voter's Card</option> 
+
+                        </select> 
+
+                    </div> 
+
+                    <div class="image" id="image"> 
+
+                        <p class="info" id="info"> 
+
+                            Upload acceptable means of identification scanned in <span class="jpeg-format">jpeg format</span> with <span class="max-size">maximum size of 20kb</span> 
+
+                        </p> 
+
+                        <label for="fileInput" class="imageUp" id="imageUp">Upload File</label> 
+
+                        <input type="file" id="fileInput" name="filename" accept="image/*" aria-describedby="info" aria-label="Upload identification file"> 
+
+                    </div> 
+
+                         
+
+                    <div class="preview" id="preview"> 
+
+                        <img src="" alt="Image Preview" class="imagepre" id="imagepre"> 
+
+                        <p class="file-info" id="file-info"></p> 
+
+                    </div> 
+
+                </form> 
+
+            </section> 
+
+        </main> 
+
+ 
+
+        <main class="main-reset" id="main-reset"> 
+
+            <h1>Password Reset</h1> 
+
+            <main class="main-signin"> 
+
+                <form class="signin" id="signin-reset"> 
+
+                    <h2 id="forgot_password">Enter your membership number and email to reset your password</h2> 
+
+                    <div class="input" id="input-reset"> 
+
+                            <input type="text" placeholder="Membership Number: Numeric Only"> 
+
+                            <input type="email" placeholder="Email Address"> 
+
+     
+
+                            <button class="button">Reset</button> 
+
+                    </div> 
+
+     
+
+                    <div class="reg_pass" id="reg_pass"> 
+
+                            <p><a class="back" id="back" href=#><span>Back to Sign In</span></a></p> 
+
+                    </div> 
+
+                </form> 
+
+            </main> 
+
+        </main> 
+
+    </main> 
+
+ 
+
+    <footer class="footer" id="footer"> 
+
+        <p> 
+
+            <span>Copyright &#169; <!-- &copy; --> <time id="year"></time></span> 
+
+            <span>ICAN</span> 
+
+            All rights reserved. 
+
+        </p> 
+
+        <a href="#"><i class='bx bxl-facebook facebook'></i></a> 
+
+        <a href="#"><i class='bx bxl-linkedin linkedin'></i></a> 
+
+        <a href="#"><i class='bx bxl-twitter twitter'></i></a> 
+
+        <a href="#"><i class='bx bxl-youtube youtube'></i></a> 
+
+        <a href="#"><i class='bx bxl-instagram instagram'></i></a> 
+
+    </footer> 
+
+ 
+
+    <script src="ICAN.js"></script> 
+
+</body> 
+
+<!-- <script src="testing.js" defer></script> USED ON THE TOP IMM AFTER THE CSS LINK AND THE DEFER ASK THE JS TO BE LOADED AFTER EVERY OTHER ELEMENTS HAS BEEN LOADED --> 
+
 </html>
